@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <styler>
+        body{
+            display: grid;
+            place-items: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .card{
+            background-color: rgb(118, 247, 204);
+            padding: 20px;
+            width: 40%;
+            box-shadow: 0 0 20px 0px black;
+        }
+        .content{
+            padding: 20px;
+            font-size: 1.5rem;
+        }
+        h3{
+            position: relative;
+            padding: 20px 0px;
+            font-size: 2rem;
+            /* background-color: #d0cdcd; */
+            z-index: 30;
+            color: black;
+
+        }
+        .h3-cont{
+            position: relative;
+        }
+        .before-h3{
+            background-color: yellow;
+            width: calc(100% + 80px);
+            /* height: 100%; */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -80px;
+            z-index: 20;
+            box-shadow: inset -10px 0px 10px -10px;
+
+
+
+        }
+        .after-h3{
+            background-color: yellow;
+            width:  80px;
+            /* height: 100%; */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -120px;
+            z-index: 20;
+            box-shadow: inset 10px 0px 10px -10px;
+
+        }
+
+    </styler> -->
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            font-size: 16px;
+        }
+        .card{
+            background-color: antiquewhite;
+            padding: 20px;
+            width: 60%;
+            position: relative;
+            box-shadow: 0 0 20px -5px black;
+        }
+        .vert-line{
+            border: 1px solid black;
+            position: absolute;
+            
+            top: 20px;
+            right: 20px;
+            bottom: 20px;
+            /* left: 130px; */
+        }
+        .horiz-line{
+            border: 1px solid black;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+        }
+        .content{
+            padding: 20px;
+
+        }
+        h3{
+            position: relative;
+            /* background-color: beige; */
+            color: black;
+            padding: 20px 0px;
+            z-index: 30;
+            font-size: 2rem;
+        }
+        .h3-wrapper{
+            position: relative;
+        }
+        .left-h3{
+            position: absolute;
+            width: calc(100% + 80px);
+            height: 100%;
+            top: 0;
+            left: -80px;
+            background-color: yellow;
+            box-shadow: inset -6px 0 10px -10px black;
+            z-index: 10;
+        }
+        .right-h3{
+            position: absolute;
+            width:  40px;
+            height: 100%;
+            top: 0;
+            right: -80px;
+            background-color: yellow;
+            z-index: 10;
+            box-shadow: inset 6px 0 10px -10px black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="horiz-line"></div>
+        <div class="vert-line"></div>
+        
+        <div class="content">
+            <div class="h3-wrapper">
+
+                <h3>THIS IS A CARD </h3>
+                <div class="left-h3"></div>
+                <div class="right-h3"></div>
+            </div>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
